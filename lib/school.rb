@@ -21,9 +21,10 @@ attr_accessor :roster
     end 
 
     def sort
-        @roster.each do |_, names|
-            names.sort!
+    sorted_class =  @roster.each do |_, names|
+            names.sort
         end     
+    sorted_class
     end    
     
 end
